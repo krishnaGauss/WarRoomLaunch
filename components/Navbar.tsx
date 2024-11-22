@@ -11,16 +11,9 @@ export function Navbar() {
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "About Us",
-      link: "/about",
+      name: "Vision",
+      link: "/vision",
       icon: <IconInfoCircle className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Team",
-      link: "/team",
-      icon: (
-        < IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
     },
     {
         name: "Testinomial",
@@ -29,6 +22,13 @@ export function Navbar() {
           <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
         ),
       },
+   
+    {
+      name: "Team",
+      link: "/team",
+      icon: (
+        < IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ), }
   ];
   return (
    
@@ -44,7 +44,7 @@ export function Navbar() {
 const DummyContent = () => {
   return (
    
-    <div className="grid grid-cols-1 h-[400rem] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
+    <div className="grid grid-cols-1 h-[200rem] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
      
     </div>
   );
