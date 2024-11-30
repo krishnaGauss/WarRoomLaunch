@@ -3,7 +3,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export default function Testimonial() {
   return (
-    <div className="grid grid-row items-center justify-center bg-black h-full w-full">
+    <div className="grid grid-row items-center justify-center bg-transparent h-full w-full">
       <h1 className="text-white text-6xl mx-auto m-12 font-mono font-semibold">Testimonials</h1>
 
       <AnimatedTestimonials
@@ -23,6 +23,14 @@ export default function Testimonial() {
             designation: "Student, GGSIPU",
             src: "/KD.jpg",
             linkedin:"https://www.linkedin.com/in/karandeep-singh-talwar/",
+          },
+          {
+            quote:
+              "War Room is an incredible community where you can grow by connecting with like-minded individuals, tackling exciting challenges, and collaborating on engaging projects. It’s the perfect place to learn, exchange ideas, and sharpen your skills. The support and feedback from others keep you inspired and constantly improving!",
+            name: "Garima Chaudhary",
+            designation: "Student, JSSATEN",
+            src: "/garima.jpg",
+            linkedin:"https://www.linkedin.com/in/garima-chaudhary-9a7137261/",
           },
           {
             quote:
