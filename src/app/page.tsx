@@ -1,9 +1,18 @@
 
+import Footer from '@/components/ui/Footer'
+import { Navbar } from '@/components/ui/Navbar'
+import React from 'react'
 
-export default function Home() {
+
+const App = () => {
   return (
-    <div>
-     Hello
+    <div className='text-4xl'> 
+      
+    <Navbar/>
+    <Footer/>
+   
     </div>
-  );
+  )
 }
+
+export default App

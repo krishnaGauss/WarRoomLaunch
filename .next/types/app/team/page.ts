@@ -1,4 +1,4 @@
-// File: D:\Projects\testing\testingnext\myapp\src\app\team\page.tsx
+// File: C:\Users\krish\Desktop\wrcc\WarRoomLaunch\src\app\team\page.tsx
 import * as entry from '../../../../src/app/team/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
