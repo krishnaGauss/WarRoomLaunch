@@ -26,7 +26,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 
         <p className="text-2xl font-semibold text-white mb-4">{name}</p>
 
-        <p className="text-sm text-gray-300 text-center">{description}</p>
+        <p className="text-lg text-gray-300 text-center">{description}</p>
       </div>
 
       <div className="flex justify-center w-full space-x-8 mt-4">

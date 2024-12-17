@@ -8,18 +8,18 @@ export function Navbar() {
     {
       name: "Home",
       link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className="h-4 w-4 text-white" />,
     },
     {
       name: "Vision",
       link: "/vision",
-      icon: <IconInfoCircle className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconInfoCircle className="h-4 w-4 text-white" />,
     },
     {
         name: "Testinomial",
         link: "/testinomial",
         icon: (
-          <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+          <IconMessage className="h-4 w-4 text-white" />
         ),
       },
    
@@ -27,7 +27,7 @@ export function Navbar() {
       name: "Team",
       link: "/team",
       icon: (
-        < IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
+        < IconUser className="h-4 w-4 text-white" />
       ), }
   ];
   return (
@@ -44,8 +44,8 @@ export function Navbar() {
 const DummyContent = () => {
   return (
    
-    <div className="grid grid-cols-1 h-[200rem] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
-     
+    <div className="grid grid-cols-1 h-30 w-full bg-black dark:bg-black relative  rounded-md">
+    
     </div>
   );
 };

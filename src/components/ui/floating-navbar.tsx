@@ -8,10 +8,12 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import SvgComponent from "@/assets/logo";
+import SvgComponent from "@/assets/logoSVG.svg";
 import { TbBrandDiscord } from "react-icons/tb";
 import { HiMenu } from "react-icons/hi"; 
 import { HiX } from "react-icons/hi"; 
+import Image from "next/image";
+
 
 export const FloatingNav = ({
   navItems,
@@ -47,8 +49,14 @@ export const FloatingNav = ({
   return (
     <>
      
-      <SvgComponent className="h-20 w-20 fixed top-0 left-0 ml-2 mt-2 z-[10000]" />
-
+     <Image
+     src={SvgComponent}
+     width={80}
+     height={80}
+     alt="logo"
+     className="relative left-8 top-4"
+     /> 
+      
       <AnimatePresence mode="wait">
         <motion.div
           initial={{
@@ -63,7 +71,7 @@ export const FloatingNav = ({
             duration: 0.2,
           }}
           className={cn(
-            "flex max-w-fit fixed top-5 inset-x-0 mx-auto dark:border-white/[0.2] dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-10",
+            "flex max-w-fit fixed top-5 inset-x-0 mx-auto  dark:bg-black shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-10",
             className
           )}
         >
@@ -74,7 +82,7 @@ export const FloatingNav = ({
                 key={`link=${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-white font-semibold dark:hover:text-neutral-300 hover:text-neutral-500"
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
@@ -82,13 +90,19 @@ export const FloatingNav = ({
               </Link>
             ))}
             <Link href="https://discord.com" target="_blank">
-              <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full w-30">
+              {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-white dark:text-white px-4 py-2 rounded-full w-30">
                 <span className="flex items-center space-x-2">
-                  <TbBrandDiscord className="text-xl" />
-                  <span>Discord</span>
+                <span>Discord</span>
                 </span>
-                <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
-              </button>
+                <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-green-500 to-transparent h-px" />
+                </button> */}
+              <button className="relative inline-flex p-4 h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+  <span className="inline-flex tracking-wider h-full gap-2 p-4 w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                <TbBrandDiscord className="text-xl" />
+    Discord
+  </span>
+</button>
             </Link>
           </div>
 

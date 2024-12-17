@@ -1,8 +1,9 @@
 import { WobbleCard } from "@/components/ui/wobble-card";
 
-const page = () => {
-  return (
-    <div className="bg-black flex items-center justify-center min-h-screen w-full">
+const Vision = () => {
+  return (<div className="flex flex-col items-center">
+      <h1 className="text-white text-6xl m-12 font-mono font-semibold">Vision</h1>
+    <div className="bg-black items-center mx-auto  min-h-screen rounded-lg  border-stone-500 w-[90vw]">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full px-4 sm:px-8 lg:px-10 py-8">
         <WobbleCard containerClassName="col-span-1 sm:col-span-2 md:h-[60vh] h-[60vh] bg-[#12f286]/70">
           <div className="grid grid-cols-4  gap-2">
@@ -59,7 +60,8 @@ const page = () => {
         </WobbleCard>
       </div>
     </div>
+    </div>
   );
 };
 
-export default page;
+export default Vision;

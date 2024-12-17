@@ -13,7 +13,7 @@ type Testimonial = {
   src: string;
   linkedin: string;
 };
-export const AnimatedTestimonials = ({
+export const  AnimatedTestimonials = ({
   testimonials,
   autoplay = true,
 }: {
@@ -133,7 +133,7 @@ export const AnimatedTestimonials = ({
                 </a>
               </div>
             </div>
-            <motion.p className="text-lg font-mono mt-8 text-neutral-300 lg:w-[30rem]">
+            <motion.p className="text-lg h-60 font-mono mt-8 text-neutral-300 lg:w-[30rem]">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
