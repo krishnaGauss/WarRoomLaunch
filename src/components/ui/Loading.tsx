@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 
 const Loading = () => {
+  console.log("Iski vhenn ki tan tana tan")
   return (
-    <div>............Loading</div>
+    <div className='z-10'>............Loading</div>
   )
 }
 

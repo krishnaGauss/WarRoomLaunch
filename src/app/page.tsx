@@ -14,7 +14,7 @@ import Loading from '@/components/ui/Loading'
 const App = () => {
   return (
       
-    <div className='text-4xl justify-center bg-transparent'> 
+    <div className='text-4xl justify-center overflow-x-hidden bg-transparent'> 
     <Suspense fallback={<Loading/>}>
     <Navbar/>
    

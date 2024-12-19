@@ -16,8 +16,8 @@ export function Navbar() {
       icon: <IconInfoCircle className="h-4 w-4 text-white" />,
     },
     {
-        name: "Testinomial",
-        link: "/testinomial",
+        name: "Testimonial",
+        link: "/testimonial",
         icon: (
           <IconMessage className="h-4 w-4 text-white" />
         ),
